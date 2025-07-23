@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0b07f3, #d0ff00);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 100px;
+  padding: 20px;
+  backdrop-filter: inline-block(10px);
+  box-shadow: 0 8px 32px lch(94.69% 56.23 110.29);
+  max-width: 400px;
+  width: 90%;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  margin-bottom: 15px;
+  animation: pulse 3s infinite;
+}
+.name {
+  font-size: 3rem;
+  margin: 1px 0;
+  animation: glow 1s infinite alternate-reverse;
+  animation-fill-mode: forwards;
+  color: red;
+}
+
+.tagline {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  color: gold;
+  animation: glow 1.5s infinite alternate-reverse;
+}
+.watsapp {
+  position: relative);
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, #ddd, #0b07f3);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 50 100px 200px linearGradient(135deg, #0b07f3, #d0ff00);
+}
+bio {
+  animation: glow 1.5s infinite alternate-reverse;
+  color-interpolation-filters: sRGB;
+  font-size: 1.1rem;
+  margin-bottom: 100px;
+  color : hwb(315 3% 5%);
+  line-height: 1.5;
+}
+.social-links a {
+  color: whitesmoke;
+  margin: 0 10px;
+  font-size: 2rem;
+  text-decoration: solid
+  animation: glow 2s infinite alternate-reverse;
+  transition: transform 0.3s, color 0.3s;
+  text-shadow: 0 0 6px gold;
+  transform: scale(0.9);
+}
+
+.social-links a:hover {
+  transform: scale(1);
+  color: gold;
+  text-shadow: 0 0 10px red;
+}
+
+.contact a {
+  color: rgb(4, 0, 255);
+  text-decoration: firebrick;
+  display: inline-block;
+  margin: 0.5px 0;
+  font-size: larger;
+  transition: color 0.3s, text-decoration 0.3s;
+  transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+}
+
+footer {
+ animation: glow 1s infinite alternate-reverse;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #fff;
+ margin-top: 20px;
+  font-size: 0.8rem;
+  color: lab(20.95% 41.99 24.28);
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff;
+  }
+  to {
+    text-shadow: 0 0 20px #ffea00, 0 0 30px #ffea00;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(255, 255, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
